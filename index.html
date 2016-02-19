@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Is it French?</title>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <style type="text/css">
+    body {
+      padding: 3em;
+      background-size: 100%;
+      background-image: url('/france.png');
+    }
+    #content {
+      background-color: rgba(255, 255, 255, 0.7);
+    }
+    .header {
+      border-bottom: 1px solid black;
+    }
+    .header > h1 {
+      font-size: 8em;
+    }
+    .header > h1 > span {
+      -webkit-text-stroke: 2px black;
+    }
+    .jumbotron {
+      margin: 3em;
+    }
+    .image-row {
+      position: relative;
+    }
+    .image-row .bubble {
+      top: 6em;
+      right: 0;
+      padding: 1em;
+      position: absolute;
+      border-radius: 2em;
+      background-color: white;
+    }
+    .bubble::after {
+      left: .5em;
+      width: 0;
+      bottom: 4px;
+      content: " ";
+      display: block;
+      position: absolute;
+      transform: rotate(33deg);
+      border-width: 15px 5px 0;
+      border-style: solid;
+      border-color: #fff transparent;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="content" class="container">
+    <div class="header clearfix text-center">
+      <h1 class="text-muted">
+      Is It
+      <span style="color:#00F;">F</span><span style="color:#FFF;">r</span><span style="color:#F00;">e</span><span style="color:#00F;">n</span><span style="color:#FFF;">c</span><span style="color:#F00;">h</span>?
+      </h3>
+    </div>
+
+    <div class="jumbotron container-fluid">
+      <h3 class="row text-center">Let's ask the expert...</h3>
+
+      <div class="row text-center image-row">
+        <h1 class="bubble">Oui!</h1>
+        <img src="/isitfrench.jpg" class="img-responsive img-rounded center-block" />
+      </div>
+      <h3 class="row text-center">Now you know!</h3>
+    </div>
+  </div>
+
+</body>
+</html>
